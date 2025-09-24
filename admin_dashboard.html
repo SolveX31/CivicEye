@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CivicEye</title>
+    <style>
+        /* Shared styles from index.html for consistency */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #388E3C;
+            --background-color: #F0F2F5;
+            --text-color: #333;
+            --light-text: #666;
+            --card-bg: #fff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--background-color); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { background-color: var(--primary-color); color: white; padding: 1.5rem 0; text-align: center; border-bottom-left-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); box-shadow: var(--box-shadow); }
+        .logo-container { display: flex; justify-content: center; align-items: center; margin-bottom: 1rem; }
+        .logo-container img { height: 100px; margin-right: 1rem;   background-color: whitesmoke;
+            border-radius: 100px;}
+        header h1 { font-weight: 700; font-size: 2.5rem; }
+        header p { font-weight: 300; font-size: 1.1rem; margin-top: 0.5rem; }
+        .navbar { display: flex; justify-content: center; padding: 1rem 0; background-color: var(--secondary-color); box-shadow: var(--box-shadow); }
+        .navbar a { color: white; text-decoration: none; font-weight: 600; padding: 0.5rem 1.5rem; transition: background-color 0.3s ease; border-radius: var(--border-radius); }
+        .navbar a:hover { background-color: rgba(255, 255, 255, 0.2); }
+        footer { text-align: center; padding: 1.5rem 0; margin-top: 2rem; color: var(--light-text); }
+        
+        /* Page-specific styles */
+        .content-section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-top: 2rem;
+        }
+        .content-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .content-section li {
+            background-color: #f9f9f9;
+            margin-bottom: 0.5rem;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="./LOGO.png" alt="CivicEye Logo">
+                <h1>CivicEye</h1>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"An eye on Civic issues".</p>
+        </div>
+    </header>
+</center>
+
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="user_login.html">User Login</a>
+    </div>
+
+    <main class="container">
+        <section class="content-section">
+            <h3>Admin Dashboard</h3>
+            <p>For city officials and administrators, our powerful dashboard provides the tools you need to manage the civic reporting process. Gain insights, assign tasks, and track performance to make your city run smoother.</p>
+            <ul>
+                <li>📊 <strong>Analytics & Reporting:</strong> Understand common issues, resolution times, and public engagement.</li>
+                <li>🎯 <strong>Task Assignment:</strong> View and automatically route new reports to the correct department or team.</li>
+                <li>🔔 <strong>Automated Notifications:</strong> Keep citizens and staff informed with real-time updates on report status.</li>
+                <li>🗺️ <strong>Geographic View:</strong> See all reported issues on an interactive map to identify hotspots.</li>
+                <li>🗳️ <strong>Report Validation:</strong> Use crowdsourced voting and AI to filter out fake or spam reports.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CivicConnect. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
